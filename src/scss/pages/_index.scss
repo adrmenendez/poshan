@@ -1,0 +1,206 @@
+.container {
+  margin: 0 15px;
+  @include tablet {
+    margin: 0 35px;
+  }
+  @include desktop {
+    @include contentCentered(810px);
+  }
+}
+
+.title {
+  @include boldFont(20px, $mainFontColor);
+  @include tablet {
+    font-size: 24px;
+    padding-top: 0;
+  }
+}
+.subtitle {
+  @include boldFont(16px, $secondFontColor);
+}
+.description {
+  @include regularFont(16px, $secondFontColor);
+}
+
+.intro {
+  @include flexCentered();
+  text-align: center;
+  transform: translate(0, -140px);
+  padding-bottom: 64px;
+  padding-top: 64px;
+  &_box {
+    width: 235px;
+    height: auto;
+    &--img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: $boxShadow;
+    }
+    @include tablet {
+      width: 310px;
+      height: auto;
+    }
+    @include desktop {
+      width: 360px;
+      height: auto;
+    }
+  }
+  &_title {
+    padding-top: 16px;
+    padding-bottom: 4px;
+    @include desktop {
+      padding-top: 0;
+    }
+  }
+  @include tablet {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+    transform: translate(0, 0);
+    @include contentCentered(700px);
+    .intro_main {
+      width: 50%;
+    }
+  }
+  @include desktop {
+    @include contentCentered(810px);
+  }
+}
+
+.philosophy {
+  background-color: $secondBackground;
+  width: 100vw;
+  text-align: center;
+  &-content {
+    @include flexCentered();
+    &_title {
+      padding-top: 64px;
+      padding-bottom: 48px;
+    }
+    @include tablet {
+      @include contentCentered(456px);
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    @include desktop {
+      @include contentCentered(910px);
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}
+
+.article {
+  width: 196px;
+  height: 227px;
+  background-color: $thirdFontColor;
+  border-radius: 10px;
+  box-shadow: $boxShadow;
+  @include flexCentered();
+  text-align: center;
+  margin-bottom: 64px;
+  padding: 0 15px;
+  &--img {
+    width: 90px;
+    height: auto;
+    opacity: 0.75;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.how {
+  padding: 96px 27px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include tablet {
+    flex-direction: row;
+    justify-content: space-between;
+    @include contentCentered(700px);
+  }
+  &_img {
+    width: 300px;
+    height: 300px;
+    background-image: url("../images/send.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: $boxShadow;
+  }
+  &_title {
+    padding-top: 32px;
+    align-self: flex-start;
+    padding-bottom: 24px;
+  }
+  &_main {
+    @include tablet {
+      order: -1;
+      max-width: 50%;
+    }
+    &_text {
+      display: flex;
+      margin-bottom: 24px;
+      &--circle {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: $mainColor;
+        @include boldFont(16px, $thirdFontColor);
+        text-align: center;
+        line-height: 40px;
+      }
+      &--all {
+        margin-left: 42px;
+        @include tablet {
+          margin-right: 30px;
+        }
+      }
+    }
+  }
+}
+
+.start {
+  background-color: $secondBackground;
+  width: 100vw;
+  padding: 96px 0;
+  &_content {
+    text-align: center;
+    @include flexCentered();
+    &--title {
+      @include boldFont(24px, $mainFontColor);
+      @include tablet {
+        @include boldFont(30px, $mainFontColor);
+      }
+      @include desktop {
+        @include boldFont(40px, $mainFontColor);
+      }
+    }
+    &--subtitle {
+      padding-top: 4px;
+      @include regularFont(16px, $secondFontColor);
+      @include tablet {
+        @include regularFont(20px, $secondFontColor);
+      }
+      @include desktop {
+        @include regularFont(24px, $secondFontColor);
+      }
+    }
+    &--submit {
+      margin-top: 12px;
+      @include semiboldFont(16px, $thirdFontColor);
+      background-color: $secondColor;
+      padding: 10px 40px;
+      border-radius: 30px;
+      text-transform: uppercase;
+      @include tablet {
+        margin-top: 24px;
+        padding: 15px 50px;
+      }
+    }
+  }
+}
