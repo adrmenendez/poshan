@@ -1,0 +1,107 @@
+.intro {
+  @include flexCentered();
+  text-align: center;
+  transform: translate(0, -140px);
+  padding-top: 64px;
+  &_box {
+    width: 235px;
+    height: auto;
+    &--img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: $boxShadow;
+    }
+    @include tablet {
+      width: 310px;
+      height: auto;
+    }
+    @include desktop {
+      width: 360px;
+      height: auto;
+    }
+  }
+  &_title {
+    padding-top: 16px;
+    padding-bottom: 4px;
+    @include desktop {
+      padding-top: 0;
+    }
+  }
+  @include tablet {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+    transform: translate(0, 0);
+    padding-bottom: 64px;
+    @include contentCentered(700px);
+    .intro_main {
+      width: 50%;
+    }
+  }
+  @include desktop {
+    @include contentCentered(810px);
+  }
+}
+
+.philosophy {
+  background-color: $secondBackground;
+  width: 100vw;
+  text-align: center;
+  &-content {
+    @include flexCentered();
+    &_title {
+      padding-top: 64px;
+      padding-bottom: 48px;
+    }
+    @include tablet {
+      @include contentCentered(456px);
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    @include desktop {
+      @include contentCentered(910px);
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}
+
+.start {
+  background-color: $secondBackground;
+  width: 100vw;
+  padding: 96px 0;
+  &_content {
+    text-align: center;
+    @include flexCentered();
+    &--title {
+      @include boldFont(24px, $mainFontColor);
+      @include tablet {
+        @include boldFont(34px, $mainFontColor);
+      }
+    }
+    &--subtitle {
+      padding-top: 4px;
+      @include regularFont(16px, $secondFontColor);
+      @include tablet {
+        @include regularFont(20px, $secondFontColor);
+      }
+      @include desktop {
+        @include regularFont(20px, $secondFontColor);
+      }
+    }
+    &--submit {
+      margin-top: 12px;
+      @include semiboldFont(16px, $thirdFontColor);
+      background-color: $secondColor;
+      padding: 10px 40px;
+      border-radius: 30px;
+      text-transform: uppercase;
+      @include tablet {
+        margin-top: 24px;
+        padding: 15px 50px;
+      }
+    }
+  }
+}

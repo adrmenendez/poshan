@@ -1,0 +1,13 @@
+.title {
+  @include boldFont(20px, $mainFontColor);
+  @include tablet {
+    font-size: 24px;
+    padding-top: 0;
+  }
+}
+.subtitle {
+  @include boldFont(16px, $secondFontColor);
+}
+.description {
+  @include regularFont(16px, $secondFontColor);
+}
