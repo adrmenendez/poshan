@@ -1,0 +1,39 @@
+.question {
+  margin-top: 92px;
+  text-align: center;
+  &_title {
+    @include boldFont(28px, $darkFontColor);
+  }
+  &_description {
+    @include regularFont(18px, $darkFontColor);
+  }
+  &_option {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    :hover {
+      border: $secondColor 4px solid;
+    }
+    @include tablet {
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    &--button {
+      height: 136px;
+      background-color: $thirdFontColor;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 8px;
+      margin-bottom: 8px;
+      @include boldFont(20px, $darkFontColor);
+      box-shadow: $boxShadow;
+      border-radius: 8px;
+      cursor: pointer;
+      @include tablet {
+        width: 49%;
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.questionnaire {
+  width: 100%;
+  height: 100vh;
+  background-color: $mainBackground;
+  &_header {
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    &--logo {
+      @include regularFont(16px, $secondFontColor);
+    }
+    &--back {
+      width: 80px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      .text {
+        @include regularFont(16px, $darkFontColor);
+      }
+      .icon {
+        color: $mainFontColor;
+        cursor: pointer;
+      }
+    }
+  }
+}
