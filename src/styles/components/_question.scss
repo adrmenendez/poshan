@@ -1,12 +1,6 @@
 .question {
   margin-top: 92px;
   text-align: center;
-  &_title {
-    @include boldFont(28px, $darkFontColor);
-  }
-  &_description {
-    @include regularFont(18px, $darkFontColor);
-  }
   &_option {
     margin-top: 48px;
     display: flex;
@@ -27,7 +21,7 @@
       align-items: center;
       margin-top: 8px;
       margin-bottom: 8px;
-      @include boldFont(20px, $darkFontColor);
+      @include boldFont(20px, $mainFontColor);
       box-shadow: $boxShadow;
       border-radius: 8px;
       cursor: pointer;

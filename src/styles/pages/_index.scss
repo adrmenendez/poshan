@@ -75,33 +75,12 @@
   &_content {
     text-align: center;
     @include flexCentered();
-    &--title {
-      @include boldFont(24px, $mainFontColor);
-      @include tablet {
-        @include boldFont(34px, $mainFontColor);
-      }
-    }
     &--subtitle {
       padding-top: 4px;
-      @include regularFont(16px, $secondFontColor);
-      @include tablet {
-        @include regularFont(20px, $secondFontColor);
-      }
-      @include desktop {
-        @include regularFont(20px, $secondFontColor);
-      }
     }
     &--submit {
-      margin-top: 12px;
-      @include semiboldFont(16px, $thirdFontColor);
-      background-color: $secondColor;
-      padding: 10px 40px;
-      border-radius: 30px;
-      text-transform: uppercase;
-      @include tablet {
-        margin-top: 24px;
-        padding: 15px 50px;
-      }
+      margin-top: 8px;
+      @include button();
     }
   }
 }

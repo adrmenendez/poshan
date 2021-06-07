@@ -1,13 +1,51 @@
-.title {
-  @include boldFont(20px, $mainFontColor);
+.font_title {
+  @include boldFont(rem(24), $mainFontColor);
   @include tablet {
-    font-size: 24px;
-    padding-top: 0;
+    font-size: rem(32);
+  }
+  @include desktop {
+    font-size: rem(36);
   }
 }
-.subtitle {
-  @include boldFont(16px, $secondFontColor);
+
+.font_h1 {
+  @include boldFont(rem(28), $mainFontColor);
+  @include tablet {
+    font-size: rem(36);
+  }
+  @include desktop {
+    font-size: rem(36);
+  }
 }
-.description {
-  @include regularFont(16px, $secondFontColor);
+
+.font_subtitle--bold {
+  @include boldFont(rem(18), $mainFontColor);
+  @include tablet {
+    font-size: rem(22);
+  }
+  @include desktop {
+    font-size: rem(22);
+  }
+}
+
+.font_subtitle {
+  @include regularFont(rem(18), $mainFontColor);
+  @include tablet {
+    font-size: rem(22);
+  }
+  @include desktop {
+    font-size: rem(22);
+  }
+}
+
+.font_description {
+  @include regularFont(rem(16), $mainFontColor);
+}
+
+.font_description--bold {
+  @include boldFont(rem(16), $mainFontColor);
+}
+
+.font_small {
+  @include regularFont(rem(14), $thirdFontColor);
 }

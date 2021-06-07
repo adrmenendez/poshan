@@ -1,5 +1,5 @@
 //fonts
-$fontSize: 16px;
+$defaultFontSize: 16;
 $fontFamily: 'Open Sans', sans-serif;
 
 //color
@@ -11,5 +11,6 @@ $mainFontColor: #4c5c5d;
 $darkFontColor: #373b3b;
 $secondFontColor: #6b7177;
 $thirdFontColor: #ffffff;
+$linearBackground: linear-gradient($mainBackground, $thirdFontColor);
 
 $boxShadow: 0 0 8px rgba(0, 0, 0, 0.2);

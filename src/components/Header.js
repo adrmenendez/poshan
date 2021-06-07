@@ -1,5 +1,6 @@
 import React from 'react';
 import header from '../images/header.jpg';
+import { Link } from 'react-router-dom';
 
 class Header extends React.Component {
   render() {
@@ -11,15 +12,15 @@ class Header extends React.Component {
             style={{ backgroundImage: `url(${header})` }}
           ></div>
           <div className='header_text'>
-            <h2 className='header_content--title'>
+            <h2 className='header_content--title font_h1'>
               Personalized plans based on your goals.
             </h2>
-            <h3 className='header_content--subtitle'>
+            <h3 className='header_content--subtitle font_subtitle'>
               Eat what you really like, we just make the maths.
             </h3>
-            <a href='#' className='header_content--submit'>
+            <Link to='/questionnaire' className='header_content--submit'>
               Try it free
-            </a>
+            </Link>
           </div>
         </section>
       </header>

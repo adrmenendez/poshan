@@ -1,25 +1,27 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 class NavBar extends React.Component {
   render() {
     return (
-      <nav class='navbar'>
-        <section class='navbar_content container'>
-          <h1 class='navbar_logo'>
+      <nav className='navbar'>
+        <section className='navbar_content container'>
+          <h1 className='navbar_logo'>
             <a href='../index.html'>poshan</a>
           </h1>
 
-          <ul class='navbar_menu'>
+          <ul className='navbar_menu'>
             <li>
-              <a class='navbar_menu_item' href='../blog.html'>
+              <Link className='navbar_menu_item' to='/blog'>
                 BLOG
-              </a>
+              </Link>
             </li>
-            <li class='navbar_menu_item'>|</li>
+
+            <li className='navbar_menu_item'>|</li>
             <li>
-              <a class='navbar_menu_item' href='../contact.html'>
+              <Link className='navbar_menu_item' to='/contact'>
                 CONTACT
-              </a>
+              </Link>
             </li>
           </ul>
         </section>

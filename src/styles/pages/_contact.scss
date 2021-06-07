@@ -1,0 +1,35 @@
+.contact {
+  background: $linearBackground;
+  height: 80vh;
+  .form {
+    padding-top: rem(82);
+    display: flex;
+    flex-direction: column;
+    &_title {
+      text-align: center;
+      padding-bottom: rem(16);
+    }
+    &_input {
+      @include semiboldFont(rem(16), $mainFontColor);
+      height: rem(42);
+      margin-bottom: rem(16);
+      border-radius: 8px;
+      box-shadow: $boxShadow;
+      padding-left: rem(12);
+    }
+    ::placeholder {
+      @include regularFont(rem(14), $secondFontColor);
+      opacity: 50%;
+    }
+    &_label {
+      padding-bottom: rem(4);
+    }
+    &_textarea {
+      @include semiboldFont(rem(16), $mainFontColor);
+      border-radius: 8px;
+      box-shadow: $boxShadow;
+      padding-top: rem(12);
+      padding-left: rem(12);
+    }
+  }
+}

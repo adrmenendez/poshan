@@ -2,9 +2,6 @@
   background-color: $mainColor;
   width: 100vw;
   padding-top: 64px;
-  &--item {
-    @include regularFont(16px, $thirdFontColor);
-  }
   &_menu {
     padding-bottom: 48px;
     text-transform: uppercase;

@@ -4,8 +4,8 @@ class Question extends React.Component {
   render() {
     return (
       <section className='question container'>
-        <h2 className='question_title'>{this.props.question}</h2>
-        <p className='question_description'>{this.props.description}</p>
+        <h2 className='font_h1'>{this.props.question}</h2>
+        <p className='font_subtitle'>{this.props.description}</p>
         <div className='question_option container'>
           <div className='question_option--button'>
             <p>{this.props.option1}</p>

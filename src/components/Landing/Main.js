@@ -1,14 +1,15 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 //components
 import Card from './Card';
 import HowSection from './HowSection';
 //images
-import plan from '../images/plan.jpg';
-import flex from '../images/flex.png';
-import board from '../images/board.png';
-import planBis from '../images/plan.png';
-import recipes from '../images/recipes.png';
-import send from '../images/send.jpg';
+import plan from '../../images/plan.jpg';
+import flex from '../../images/flex.png';
+import board from '../../images/board.png';
+import planBis from '../../images/plan.png';
+import recipes from '../../images/recipes.png';
+import send from '../../images/send.jpg';
 
 class Main extends React.Component {
   render() {
@@ -19,8 +20,8 @@ class Main extends React.Component {
             <img src={plan} alt='meal-plan' className='intro_box--img' />
           </div>
           <div className='intro_main'>
-            <h2 className='intro_title title'>Eat conciously</h2>
-            <p className='intro_description description'>
+            <h2 className='intro_title font_subtitle--bold'>Eat conciously</h2>
+            <p className='intro_description font_description'>
               A well planned diet is essential to achieve a good physical and
               mental health. Most people doesn't know how much should they eat
               or which kind of food is the best. We want to give you the clue
@@ -29,7 +30,9 @@ class Main extends React.Component {
           </div>
         </article>
         <section className='philosophy'>
-          <h2 className='philosophy-content_title title'>Our philosophy</h2>
+          <h2 className='philosophy-content_title font_subtitle--bold'>
+            Our philosophy
+          </h2>
           <section className='philosophy-content'>
             <Card
               src={flex}
@@ -63,7 +66,7 @@ class Main extends React.Component {
             style={{ backgroundImage: `url(${send})` }}
           ></div>
           <section className='how_main'>
-            <h2 className='how_title title'>How it works</h2>
+            <h2 className='how_title font_subtitle--bold'>How it works</h2>
             <HowSection
               number={1}
               subtitle='Tell us about you'
@@ -83,13 +86,13 @@ class Main extends React.Component {
         </section>
         <section className='start'>
           <section className='start_content'>
-            <h2 className='start_content--title'>Your new recommended plan</h2>
-            <p className='start_content--subtitle'>
+            <h2 className='font_title'>Your new recommended plan</h2>
+            <p className='start_content--subtitle font_subtitle'>
               Answer some questions about you and we'll create the perfect plan
             </p>
-            <a href='#' className='start_content--submit'>
+            <Link to='/questionnaire' className='header_content--submit'>
               Start now
-            </a>
+            </Link>
           </section>
         </section>
       </main>
