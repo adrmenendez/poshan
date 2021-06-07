@@ -1,8 +1,9 @@
 .contact {
   background: $linearBackground;
-  height: 80vh;
+  min-height: 80vh;
   .form {
     padding-top: rem(82);
+    padding-bottom: rem(82);
     display: flex;
     flex-direction: column;
     &_title {
@@ -30,6 +31,15 @@
       box-shadow: $boxShadow;
       padding-top: rem(12);
       padding-left: rem(12);
+    }
+    &_button {
+      @include button();
+      margin-top: rem(20);
+      width: 50%;
+      align-self: center;
+      @include tablet {
+        align-self: flex-end;
+      }
     }
   }
 }

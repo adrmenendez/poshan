@@ -18,7 +18,7 @@ class Header extends React.Component {
             <h3 className='header_content--subtitle font_subtitle'>
               Eat what you really like, we just make the maths.
             </h3>
-            <Link to='/questionnaire' className='header_content--submit'>
+            <Link to='/start' className='header_content--submit'>
               Try it free
             </Link>
           </div>

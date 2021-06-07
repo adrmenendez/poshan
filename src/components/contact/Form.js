@@ -2,7 +2,11 @@ import React from 'react';
 
 const Form = (props) => {
   return (
-    <form action='' className='form container'>
+    <form
+      action='https://formspree.io/f/xvodaekr'
+      method='POST'
+      className='form container'
+    >
       <h2 className='form_title font_subtitle--bold'>Contact us</h2>
       <label htmlFor='name' className='form_label font_description'>
         Name
@@ -42,6 +46,7 @@ const Form = (props) => {
         placeholder='Leave here your comment and we"ll answer you as soon as possible...'
         className='form_textarea'
       ></textarea>
+      <input type='submit' className='form_button' value='send' />
     </form>
   );
 };
