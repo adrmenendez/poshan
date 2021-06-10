@@ -1,0 +1,47 @@
+[
+    {
+    "question": "What's your name?",
+    "description": "",
+    "options": [] 
+    },
+    {
+    "question": "How old are you?",
+    "description": "",
+    "options": [] 
+    },
+    {
+    "question": "How much do you weight?",
+    "description": "",
+    "options": [] 
+    },
+    {
+    "question": "How tall are you?",
+    "description": "",
+    "options": [] 
+    },
+    {
+    "question": "Are you male or female?",
+    "description": "",
+    "options": ["male", "female"] 
+    },
+    {
+    "question": "How many meals do you usually have per day?",
+    "description": "",
+    "options": [2, 3, 4, 5] 
+    },
+    {
+    "question": "How many days per week do you practise sport?",
+    "description": "",
+    "options": ["Never", "Two or three days per week", "Four or five days per week", "Everyday"] 
+    },
+    {
+    "question": "Do you prefer active or lazy weekends?",
+    "description": "",
+    "options": ["Sometimes I'm active but I prefer relaxed ones", "I'm an adventure person!", "Sofa, films and pop-corn are for me", "My activity is hang out with friends!"] 
+    },
+    {
+    "question": "Do you usually drink alcohol?",
+    "description": "",
+    "options": ["Hanging out with friens is my ppassion!", "Never!", "One day or two during the weekend", "A little beer or wine a day never kill anyone"] 
+    }
+]
