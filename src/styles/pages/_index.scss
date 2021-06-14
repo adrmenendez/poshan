@@ -77,9 +77,9 @@
     @include flexCentered();
     &--subtitle {
       padding-top: 4px;
+      padding-bottom: 12px;
     }
     &--submit {
-      margin-top: 8px;
       @include button();
     }
   }
