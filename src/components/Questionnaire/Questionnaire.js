@@ -1,25 +1,29 @@
 import React from 'react';
 import Question from './Question';
+import questionData from '../../data/questions.json';
 
 class Questionnaire extends React.Component {
   render() {
+    const renderQuestions = questionData.map((question) => {
+      return (
+        <Question
+          question={question.question}
+          description={question.description}
+          options={question.options}
+        />
+      );
+    });
     return (
       <main className='questionnaire'>
         <nav className='questionnaire_header container'>
           <div className='questionnaire_header--back'>
             <i class='fas fa-arrow-left icon'></i>
             <p className='text'>Go Back</p>
+            {/* Hacer aqui un Link que clicke al id-1 para volver a la pregunta anterior */}
           </div>
           <h1 className='questionnaire_header--logo'>poshan</h1>
         </nav>
-        <Question
-          question='How many meals do you want to make per day?'
-          description='Choose the option that better suits you'
-          option1={3}
-          option2={4}
-          option3={5}
-          option4={2}
-        />
+        {renderQuestions}
       </main>
     );
   }
