@@ -24,6 +24,7 @@
     }
     &--submit {
       @include button();
+      cursor: pointer;
     }
     @include tablet {
       @include flexCentered();

@@ -1,56 +1,77 @@
 [
     {
     "id": "10",
-    "question": "What's your name?",
-    "description": "",
-    "options": [] 
+    "question": "Hi! What's your name?",
+    "description": "Let us know a bit more about you!",
+    "options": "",
+    "input": {
+        "placeholder": "John Wayne",
+        "name": "name"
+    }
     },
     {
     "id": "11",
     "question": "How old are you?",
-    "description": "",
-    "options": [] 
+    "description": "Let us know a bit more about you!",
+    "options": "",
+    "input": {
+        "placeholder": "18",
+        "name": "age"
+    } 
     },
     {
     "id": "12",
-    "question": "How much do you weight?",
-    "description": "",
-    "options": [] 
+    "question": "How much do you weight? (kg)",
+    "description": "Let us know a bit more about you!",
+    "options": "" ,
+    "input": {
+        "placeholder": "58",
+        "name": "weight"
+    }
     },
     {
     "id": "13",
-    "question": "How tall are you?",
-    "description": "",
-    "options": [] 
+    "question": "How tall are you? (cm)",
+    "description": "Let us know a bit more about you!",
+    "options": "",
+    "input": {
+        "placeholder": "172",
+        "name": "heigth"
+    } 
     },
     {
     "id": "14",
     "question": "Are you male or female?",
-    "description": "",
+    "name": "gender",
+    "description": "This question help us making the maths.",
     "options": ["male", "female"] 
     },
     {
     "id": "15",
     "question": "How many meals do you usually have per day?",
-    "description": "",
+    "name": "meals",
+    "description": "Aquí debería aparecer una buena descripción de esta pregunta",
     "options": [2, 3, 4, 5] 
     },
     {
     "id": "16",
     "question": "How many days per week do you practise sport?",
-    "description": "",
+    "name": "sportDays",
+    "description": "Aquí debería aparecer una buena descripción de esta pregunta",
     "options": ["Never", "Two or three days per week", "Four or five days per week", "Everyday"] 
     },
     {
     "id": "17",
     "question": "Do you prefer active or lazy weekends?",
-    "description": "",
-    "options": ["Sometimes I'm active but I prefer relaxed ones", "I'm an adventure person!", "Sofa, films and pop-corn are for me", "My activity is hang out with friends!"] 
+    "name": "weekends",
+    "description": "Aquí debería aparecer una buena descripción de esta pregunta",
+    "options": ["Sofa, films and pop-corn are for me", "Sometimes I'm active but I prefer relaxed ones", "Let's go to a good restaurant (after a great walk)!" , "I'm an adventure person!"] 
     },
     {
     "id": "18",
     "question": "Do you usually drink alcohol?",
-    "description": "",
-    "options": ["Hanging out with friens is my passion!", "Never!", "One day or two during the weekend", "A little beer or wine a day never kill anyone"] 
+    "name": "alcohol",
+    "description": "Aquí debería aparecer una buena descripción de esta pregunta",
+    "options": ["Hanging out with friens is my passion!", "One day or two per weekend", "A little beer or wine a day never has killed anyone", "Never!"] 
     }
 ]

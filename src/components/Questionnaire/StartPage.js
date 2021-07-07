@@ -7,8 +7,10 @@ class Questionnaire extends React.Component {
       <main className='questionnaire'>
         <nav className='questionnaire_header container'>
           <div className='questionnaire_header--back'>
-            <i class='fas fa-arrow-left icon'></i>
-            <p className='text'>Go Back</p>
+            <i className='fas fa-arrow-left icon'></i>
+            <Link className='text' to='/'>
+              Go back
+            </Link>
           </div>
           <h1 className='questionnaire_header--logo'>poshan</h1>
         </nav>
@@ -18,7 +20,7 @@ class Questionnaire extends React.Component {
             Tell us about you and we'll create a personalised meal plan just for
             you
           </h2>
-          <Link className='questionnaire_welcome--button' to='/question/:id'>
+          <Link className='questionnaire_welcome--button' to='/question/10'>
             Let's go
           </Link>
         </section>

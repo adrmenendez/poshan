@@ -18,7 +18,7 @@ class Footer extends React.Component {
             </li>
           </ul>
           <ul className='footer_content_copy'>
-            <li className='copy-list'>
+            {/* <li className='copy-list'>
               <a href='#' className='font_small'>
                 <small>Copyrigth © 2021</small>
               </a>
@@ -35,7 +35,7 @@ class Footer extends React.Component {
               <a href='#' className='font_small'>
                 <small>Privacy Policy</small>
               </a>
-            </li>
+            </li> */}
           </ul>
         </section>
       </footer>

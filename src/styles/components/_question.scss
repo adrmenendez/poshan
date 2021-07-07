@@ -5,6 +5,22 @@
     margin-top: 48px;
     display: flex;
     flex-direction: column;
+    &--input {
+      width: 100%;
+      height: 50px;
+      box-shadow: $boxShadow;
+      border-radius: 8px;
+      @include semiboldFont(18px, $mainFontColor);
+      padding-left: 16px;
+      &::placeholder {
+        opacity: 50%;
+        @include semiboldFont(18px, $secondFontColor);
+      }
+    }
+    &--next {
+      @include button();
+      margin-top: 16px;
+    }
     :hover {
       border: $secondColor 4px solid;
     }
@@ -14,20 +30,29 @@
       flex-wrap: wrap;
     }
     &--button {
-      height: 136px;
-      background-color: $thirdFontColor;
       display: flex;
       justify-content: center;
       align-items: center;
       margin-top: 8px;
       margin-bottom: 8px;
-      @include boldFont(20px, $mainFontColor);
-      box-shadow: $boxShadow;
       border-radius: 8px;
-      cursor: pointer;
+      :hover {
+        border: none;
+        border-radius: 8px;
+      }
       @include tablet {
         width: 49%;
       }
+    }
+    &--value {
+      @include boldFont(20px, $mainFontColor);
+      text-align: center;
+      width: 100%;
+      cursor: pointer;
+      height: 136px;
+      background-color: $thirdFontColor;
+      border-radius: 8px;
+      box-shadow: $boxShadow;
     }
   }
 }

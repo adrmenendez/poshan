@@ -1,246 +1,118 @@
-[
-    {
-        "male": {
-            "definition": {
-                "super":{
-                    "2": {
 
-                    },
-                    "3": {
-
-                    },
-                    "4": {
-
-                    },
-                    "5": {
-
-                    } 
-                },
-                "active":{
-                    "2": {
-
-                    },
-                    "3": {
-
-                    },
-                    "4": {
-
-                    },
-                    "5": {
-
-                    } 
-
-                },
-                "moderate":{
-                    "2": {
-
-                    },
-                    "3": {
-
-                    },
-                    "4": {
-
-                    },
-                    "5": {
-
-                    } 
-                },
-                "lazy":{
-                    "2": {
-
-                    },
-                    "3": {
-
-                    },
-                    "4": {
-
-                    },
-                    "5": {
-
-                    } 
-                }
+{
+    "male": {
+        "definition": {
+            "super":{
+                "two": "dieta1",
+                "three": "dietatwo",
+                "four": "dietathree",
+                "five": "dieta4"
             },
-            "volumen": {
-                "super":{
-                    "2": {
+            "active":{
+                "two": "dieta1",
+                "three": "dietatwo",
+                "four": "dietathree",
+                "five": "dietafour"
 
-                    },
-                    "3": {
-
-                    },
-                    "4": {
-
-                    },
-                    "5": {
-
-                    } 
-                },
-                "active":{
-                    "2": {
-
-                    },
-                    "3": {
-
-                    },
-                    "4": {
-
-                    },
-                    "5": {
-
-                    } 
-
-                },
-                "moderate":{
-                    "2": {
-
-                    },
-                    "3": {
-
-                    },
-                    "4": {
-
-                    },
-                    "5": {
-
-                    } 
-                },
-                "lazy":{
-                    "2": {
-
-                    },
-                    "3": {
-
-                    },
-                    "4": {
-
-                    },
-                    "5": {
-
-                    } 
-                }
+            },
+            "moderate":{
+                "two": "dieta1",
+                "three": "dietatwo",
+                "four": "dietathree",
+                "five": "dietafour"
+            },
+            "lazy":{
+                "two": "dieta1",
+                "three": "dietatwo",
+                "four": "dietathree",
+                "five": "dietafour"
             }
         },
-        "female": {
-            "definition": {
-                "super":{
-                    "2": {
-
-                    },
-                    "3": {
-
-                    },
-                    "4": {
-
-                    },
-                    "5": {
-
-                    } 
-                },
-                "active":{
-                    "2": {
-
-                    },
-                    "3": {
-
-                    },
-                    "4": {
-
-                    },
-                    "5": {
-
-                    } 
-
-                },
-                "moderate":{
-                    "2": {
-
-                    },
-                    "3": {
-
-                    },
-                    "4": {
-
-                    },
-                    "5": {
-
-                    } 
-                },
-                "lazy":{
-                    "2": {
-
-                    },
-                    "3": {
-
-                    },
-                    "4": {
-
-                    },
-                    "5": {
-
-                    } 
-                }
+        "volumen": {
+            "super":{
+                "two": "dieta1",
+                "three": "dietatwo",
+                "four": "dietathree",
+                "five": "dietafour"
             },
-            "volumen": {
-                "super":{
-                    "2": {
+            "active":{
+                "two": "dieta1",
+                "three": "dietatwo",
+                "four": "dietathree",
+                "five": "dietafour"
 
-                    },
-                    "3": {
-
-                    },
-                    "4": {
-
-                    },
-                    "5": {
-
-                    } 
-                },
-                "active":{
-                    "2": {
-
-                    },
-                    "3": {
-
-                    },
-                    "4": {
-
-                    },
-                    "5": {
-
-                    } 
-
-                },
-                "moderate":{
-                    "2": {
-
-                    },
-                    "3": {
-
-                    },
-                    "4": {
-
-                    },
-                    "5": {
-
-                    } 
-                },
-                "lazy":{
-                    "2": {
-
-                    },
-                    "3": {
-
-                    },
-                    "4": {
-
-                    },
-                    "5": {
-
-                    } 
-                }
+            },
+            "moderate":{
+                "two": "dieta1",
+                "three": "dietatwo",
+                "four": "dietathree",
+                "five": "dietafour"
+            },
+            "lazy":{
+                "two": "dieta1",
+                "three": "dietatwo",
+                "four": "dietathree",
+                "five": "dietafour"
             }
-            
         }
+    },
+    "female": {
+        "definition": {
+            "super":{
+                "two": "dieta1",
+                "three": "dietatwo",
+                "four": "dietathree",
+                "five": "dietafour"
+            },
+            "active":{
+                "two": "esta es la dieta del ejemplo a mano",
+                "three": "dietatwo",
+                "four": "dietathree",
+                "five": "dietafour"
+
+            },
+            "moderate":{
+                "two": "dieta1",
+                "three": "dietatwo",
+                "four": "dietathree",
+                "five": "dietafour"
+            },
+            "lazy":{
+                "two": "dieta1",
+                "three": "dietatwo",
+                "four": "dietathree",
+                "five": "dietafour"
+            }
+        },
+        "volumen": {
+            "super":{
+                "two": "dieta1",
+                "three": "dietatwo",
+                "four": "dietathree",
+                "five": "dietafour"
+            },
+            "active":{
+                "two": "dieta1",
+                "three": "dietatwo",
+                "four": "dietathree",
+                "five": "dietafour"
+
+            },
+            "moderate":{
+                "two": "dieta1",
+                "three": "dietatwo",
+                "four": "dietathree",
+                "five": "dietafour"
+            },
+            "lazy":{
+                "two": "dieta1",
+                "three": "dietatwo",
+                "four": "dietathree",
+                "five": "dietafour"
+            }
+        }
+        
     }
-]
+}
+
 
