@@ -30,21 +30,17 @@ const End = (props) => {
         mostFrequent = arr[i];
       }
     }
-    if (mostFrequent === '0') {
+    if (mostFrequent === '0' || mostFrequent === '1') {
       return 'lazy';
-    } else if (mostFrequent === '1') {
-      return 'moderate';
-    } else if (mostFrequent === '2') {
-      return 'active';
     } else {
-      return 'super';
+      return 'active';
     }
   };
 
   const [goal] = useState(calculateIMC());
   const [sport] = useState(calculateActivity());
 
-  const displayDiet = () => {
+  const chooseDiet = () => {
     const data = dietData;
     const meals = props.meals;
     if (props.gender === 'female') {
@@ -56,11 +52,44 @@ const End = (props) => {
     }
   };
 
+  const paintDiet = () => {
+    const diet = chooseDiet();
+    const htmlCode = diet.meals.map((meal, index) => {
+      return (
+        <>
+          <h2>Meal {[index + 1]}</h2>
+          <p>- {meal.protein}</p>
+          <p>- {meal.extra}</p>
+        </>
+      );
+    });
+
+    const carbsCode = (
+      <>
+        <h2>
+          Add one option of the following paragraph {diet.carbs.days} per week
+          with the meal you want:
+        </h2>
+        <p>- {diet.carbs.carbs}</p>
+      </>
+    );
+
+    return (
+      <>
+        <div>{htmlCode}</div>
+        <div>{carbsCode}</div>
+      </>
+    );
+  };
   return (
     <>
       <NavBar />
       <div className='questionnaire'>
-        <h2 className='font_title'>{displayDiet()}</h2>
+        {/* No puedo descomentar la siguiente línea hasta que no complete todo el JSON
+        de data o me da error por no poder recorrer los arrays */}
+        {/* Aquí añado un botón y cuando lo pulse aparece la dieta :)) */}
+        {/* <div>{paintDiet()}</div> */}
+        {/* <p>{JSON.stringify(dietData.male.definition.active.three)}</p> */}
       </div>
       <Footer />
     </>
