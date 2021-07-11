@@ -30,32 +30,37 @@ const End = (props) => {
         mostFrequent = arr[i];
       }
     }
-    if (mostFrequent === 0) {
+    if (mostFrequent === '0') {
       return 'lazy';
-    } else if (mostFrequent === 1) {
+    } else if (mostFrequent === '1') {
       return 'moderate';
-    } else if (mostFrequent === 2) {
+    } else if (mostFrequent === '2') {
       return 'active';
     } else {
       return 'super';
     }
   };
 
-  console.log(props.gender);
   const [goal] = useState(calculateIMC());
   const [sport] = useState(calculateActivity());
+
+  const displayDiet = () => {
+    const data = dietData;
+    const meals = props.meals;
+    if (props.gender === 'female') {
+      const finalDiet = data.female[goal][sport][meals];
+      return finalDiet;
+    } else if (props.gender === 'male') {
+      const finalDiet = data.male[goal][sport][meals];
+      return finalDiet;
+    }
+  };
 
   return (
     <>
       <NavBar />
       <div className='questionnaire'>
-        <h2 className='font_title'>
-          {props.gender}
-          {goal}
-          {sport}
-          {props.meals}
-        </h2>
-        <h2 className='font_title'>{dietData.female.definition.active.two}</h2>
+        <h2 className='font_title'>{displayDiet()}</h2>
       </div>
       <Footer />
     </>

@@ -19,6 +19,7 @@ class Question extends React.Component {
             <input
               className='question_option--input'
               type='text'
+              value={this.props.value}
               placeholder={questionData.input.placeholder}
               name={questionData.input.name}
               onChange={this.props.handleTextInput}

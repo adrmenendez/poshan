@@ -1,5 +1,6 @@
 import '../styles/main.scss';
 import React from 'react';
+import ls from '../services/local';
 import { Route, Switch } from 'react-router-dom';
 import questionData from '../data/questions.json';
 import Landing from './Landing/Landing';
@@ -23,6 +24,17 @@ class App extends React.Component {
       meals: 0,
       sport: [],
     };
+  }
+
+  componentDidMount() {
+    if (ls.get('answers')) {
+      const localData = ls.get('answers');
+      this.setState(localData);
+    }
+  }
+
+  componentDidUpdate() {
+    ls.set('answers', this.state);
   }
 
   handleTextInput(ev) {

@@ -3,9 +3,54 @@
     "male": {
         "definition": {
             "super":{
-                "two": "dieta1",
-                "three": "dietatwo",
-                "four": "dietathree",
+                "two": {
+                    "1": {
+                        "protein": "150-200g of chicken breast / 150-200g of turkey breast / 150-200g of fish-seafood / 1-2 bars of cod roe / 150-200g of lean beef / 150-200g of lean pork loin / 2-3 cans of natural preserves / 1 whole egg + 150 ml of whites / 150g of tofu / 50g of textured soybeans / 200g of 0% cottage cheese / 250g of 0% whipped fresh cheese + 20g of protein / 1 skyrella (lidl mozarella) / 250g of 0% fresh cheese from Burgos.",
+                        "extra": "Vegetables to choose (salad, puree, roasted, pot, broth, etc.). Add as much as yoy want"
+                        },
+                    "2": {
+                        "protein": "200-250g of chicken breast / 200-250g of turkey breast / 200-250g of fish-seafood / 2 bars of cod roe / 200g of lean beef / 200g of lean pork loin / 2-3 cans of preserves natural / 1 whole egg + 200 ml of whites / 200g of 0% cottage cheese / 250g of fresh whipped cheese 0% + 20g of protein / 1 skyrella (lidl mozarella) / 250g of 0% fresh cheese from Burgos.",
+                        "extra": "Vegetables to choose (salad, puree, roasted, pot, broth, etc.). Add as much as yoy want"
+                    },
+                    "carbs": "60g of rice (steamed, wholemeal, basmati) / 60g of wholemeal pasta (buckwheat, spelled, rye, etc.) / 60g of quinoa / 60g of legumes or similar (lentil paste) / 200g of potato or sweet potato / 1 glass of precooked quinoa or rice / 200g of cooked legumes from a pot / 2 slices of whole wheat bread (50-60g) / 60g “gluten-free” Older Paso fajitas."
+                },
+                "three": {
+                    "1": {
+                        "protein": "60g of recommended cold cuts (+ 90% meat) / 60g of cured loin / 40g of ham / 1 whole egg + 2-3 whites (whites optional) / 150-250g of beaten fresh cheese or protein-rich yogurt / 100-200g of 0% cottage cheese or 0% burgos cheese / 1 skyr / 35g of whey protein (protein shakes) / 200-250ml of milk (preferably skimmed or semi-skimmed) + 25g of whey protein / 1 skyrella (mozzarella lidl).",
+                        "carbs": "2 slices of whole wheat bread / 40-60g of wholemeal bread to choose / 3-4 slices of dry bread (fiber and sesame) / 1 slice of moist bread (German bread type) / 30-40g of whole grains (flakes of oats, corn flakes without sugar, puffed rice, oatmeal, etc.) / 1 piece of fruit / 15g of nuts.",
+                        "extra": "1 piece of fruit / 15 g of natural nuts"
+                        },
+                    "2": {
+                        "protein": "200-250g of chicken breast / 200-250g of turkey breast / 200-250g of fish-seafood / 2 bars of cod roe / 200g of lean beef / 200g of lean pork loin / 2-3 cans of preserves natural / 1 whole egg + 200 ml of whites / 200g of 0% cottage cheese / 250g of fresh whipped cheese 0% + 20g of protein / 1 skyrella (lidl mozarella) / 250g of 0% fresh cheese from Burgos.",
+                        "extra": "Vegetables to choose (salad, puree, roasted, pot, broth, etc.). Add as much as yoy want"
+                    },
+                    "3": {
+                        "protein": "200-250g of chicken breast / 200-250g of turkey breast / 200-250g of fish-seafood / 2 bars of cod roe / 200g of lean beef / 200g of lean pork loin / 2-3 cans of preserves natural / 1 whole egg + 200 ml of whites / 200g of 0% cottage cheese / 250g of fresh whipped cheese 0% + 20g of protein / 1 skyrella (lidl mozarella) / 250g of 0% fresh cheese from Burgos.",
+                        "extra": "Vegetables to choose (salad, puree, roasted, pot, broth, etc.). Add as much as yoy want"
+                    }
+                    }, 
+                    "carbs": "60g of rice (steamed, wholemeal, basmati) / 60g of wholemeal pasta (buckwheat, spelled, rye, etc.) / 60g of quinoa / 60g of legumes or similar (lentil paste) / 200g of potato or sweet potato / 1 glass of precooked quinoa or rice / 200g of cooked legumes from a pot / 2 slices of whole wheat bread (50-60g) / 60g “gluten-free” Older Paso fajitas."
+                },
+                "four": {
+                    "1": {
+                        "protein": "60g of recommended cold cuts (+ 90% meat) / 60g of cured loin / 40g of ham / 1 whole egg + 2-3 whites (whites optional) / 150-250g of beaten fresh cheese or protein-rich yogurt / 100-200g of 0% cottage cheese or 0% burgos cheese / 1 skyr / 35g of whey protein (protein shakes) / 200-250ml of milk (preferably skimmed or semi-skimmed) + 25g of whey protein / 1 skyrella (mozzarella lidl).",
+                        "carbs": "2 slices of whole wheat bread / 40-60g of wholemeal bread to choose / 3-4 slices of dry bread (fiber and sesame) / 1 slice of moist bread (German bread type) / 30-40g of whole grains (flakes of oats, corn flakes without sugar, puffed rice, oatmeal, etc.) / 1 piece of fruit / 15g of nuts.",
+                        "extra": "1 piece of fruit / 15 g of natural nuts"
+                        },
+                    "2": {
+                        "protein": "200-250g of chicken breast / 200-250g of turkey breast / 200-250g of fish-seafood / 2 bars of cod roe / 200g of lean beef / 200g of lean pork loin / 2-3 cans of preserves natural / 1 whole egg + 200 ml of whites / 200g of 0% cottage cheese / 250g of fresh whipped cheese 0% + 20g of protein / 1 skyrella (lidl mozarella) / 250g of 0% fresh cheese from Burgos.",
+                        "extra": "Vegetables to choose (salad, puree, roasted, pot, broth, etc.). Add as much as yoy want"
+                    },
+                    "extra": {
+                        "extra": "1 piece of fruit / 15g of natural nuts / 2 slices of thins bread or dry bread / 1 natural or protein-rich yogurt / 150-200g of 0% smoothie fresh cheese / 1 skyr / 30-50g of recommended cold cuts / 30- 60 g of cured loin / 1 can of natural preserve / 25g of whey protein.",
+                        "options": "1-2"
+                    },
+                    "3": {
+                        "protein": "200-250g of chicken breast / 200-250g of turkey breast / 200-250g of fish-seafood / 2 bars of cod roe / 200g of lean beef / 200g of lean pork loin / 2-3 cans of preserves natural / 1 whole egg + 200 ml of whites / 200g of 0% cottage cheese / 250g of fresh whipped cheese 0% + 20g of protein / 1 skyrella (lidl mozarella) / 250g of 0% fresh cheese from Burgos.",
+                        "extra": "Vegetables to choose (salad, puree, roasted, pot, broth, etc.). Add as much as yoy want"
+                    },
+                    "carbs": "60g of rice (steamed, wholemeal, basmati) / 60g of wholemeal pasta (buckwheat, spelled, rye, etc.) / 60g of quinoa / 60g of legumes or similar (lentil paste) / 200g of potato or sweet potato / 1 glass of precooked quinoa or rice / 200g of cooked legumes from a pot / 2 slices of whole wheat bread (50-60g) / 60g “gluten-free” Older Paso fajitas."
+                },
                 "five": "dieta4"
             },
             "active":{
