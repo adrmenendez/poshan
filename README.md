@@ -6,6 +6,8 @@ This is a personal project that I'm developing in order to improve my code skill
 
 The project is a SPAs developed with React where you can find a landing page with all the main information about the project, a contact page where you can submit a form made with 'formspree' and a questionnaire. On the questionnaire you can answer some questions about you and your habits and a personalized plan will be calculated for you!
 
+\*\* The project is still in progress, I hope I can have an mpv soon!
+
 ## How to start the project
 
 You should download the project, don't clone it or you wouldn't commit your changes.
