@@ -99,8 +99,7 @@
                 "four": "dietathree",
                 "five": "dietafour"
             }
-        }
-    },
+        },
     "female": {
         "definition": {
             "super":{
