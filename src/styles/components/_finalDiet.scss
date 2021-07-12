@@ -1,0 +1,19 @@
+.finalDiet {
+  padding-bottom: 120px;
+  padding-top: 120px;
+  &_title {
+    padding-bottom: 32px;
+  }
+  .meals {
+    &_title {
+      padding-top: 20px;
+      padding-bottom: 4px;
+    }
+  }
+  .carbs {
+    &_title {
+      padding-top: 20px;
+      padding-bottom: 4px;
+    }
+  }
+}

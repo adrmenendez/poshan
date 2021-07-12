@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 class Footer extends React.Component {
   render() {
@@ -7,9 +8,9 @@ class Footer extends React.Component {
         <section className='footer_content container'>
           <ul className='footer_menu'>
             <li>
-              <a href='../contact.html' className='footer_menu--item'>
+              <Link to='/contact' className='footer_menu--item'>
                 Do you need help?
-              </a>
+              </Link>
             </li>
             <li>
               <a href='../blog.html' className='footer_menu--item'>

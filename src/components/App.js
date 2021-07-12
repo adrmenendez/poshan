@@ -22,7 +22,9 @@ class App extends React.Component {
       heigth: 0,
       gender: '',
       meals: 0,
-      sport: [],
+      sportDays: 0,
+      weekends: 0,
+      alcohol: 0,
     };
   }
 
@@ -69,15 +71,9 @@ class App extends React.Component {
       value = parseInt(ev.target.id);
     }
 
-    if (key === 'gender' || key === 'meals') {
-      this.setState({
-        [key]: value,
-      });
-    } else {
-      this.setState((prevState) => ({
-        sport: [...prevState.sport, value],
-      }));
-    }
+    this.setState({
+      [key]: value,
+    });
   }
 
   renderQuestionDetail(routerProps) {

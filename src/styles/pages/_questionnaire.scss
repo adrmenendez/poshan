@@ -1,6 +1,6 @@
 .questionnaire {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background: $linearBackground;
   &_header {
     height: 45px;
