@@ -90,7 +90,7 @@ class Main extends React.Component {
             <p className='start_content--subtitle font_subtitle'>
               Answer some questions about you and we'll create the perfect plan
             </p>
-            <Link to='/questionnaire' className='header_content--submit'>
+            <Link to='/start' className='header_content--submit'>
               Start now
             </Link>
           </section>
