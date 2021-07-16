@@ -87,6 +87,7 @@ class App extends React.Component {
         questionObject={questionFound}
         handleTextInput={this.handleTextInput}
         handleButtonClick={this.handleButtonClick}
+        {...this.state}
       />
     );
   }

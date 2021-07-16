@@ -1,5 +1,6 @@
 .question {
-  margin-top: 92px;
+  margin-top: 124px;
+  margin-bottom: 124px;
   text-align: center;
   &_option {
     margin-top: 48px;
@@ -21,38 +22,60 @@
       @include button();
       margin-top: 16px;
     }
-    :hover {
-      border: $secondColor 4px solid;
+    &--button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 100%;
+      height: 136px;
+      background-color: $thirdFontColor;
+      border-radius: 8px;
+      box-shadow: $boxShadow;
+      margin-top: 8px;
+      margin-bottom: 8px;
+      :hover {
+        border: $secondColor 3px solid;
+        border-radius: 8px;
+      }
+    }
+    &--value {
+      @include boldFont(20px, $mainFontColor);
+      height: 100%;
+      width: 100%;
+      background: none;
+      cursor: pointer;
+      padding: 8px;
+      white-space: normal;
     }
     @include tablet {
       flex-direction: row;
       justify-content: space-between;
       flex-wrap: wrap;
-    }
-    &--button {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 8px;
-      margin-bottom: 8px;
-      border-radius: 8px;
-      :hover {
-        border: none;
-        border-radius: 8px;
-      }
-      @include tablet {
+      &--button {
         width: 49%;
       }
     }
-    &--value {
-      @include boldFont(20px, $mainFontColor);
-      text-align: center;
-      width: 100%;
-      cursor: pointer;
-      height: 136px;
-      background-color: $thirdFontColor;
-      border-radius: 8px;
-      box-shadow: $boxShadow;
-    }
   }
 }
+
+// :hover {
+//   border: $secondColor 4px solid;
+// }
+// @include tablet {
+//   flex-direction: row;
+//   justify-content: space-between;
+//   flex-wrap: wrap;
+// }
+// &--button {
+//   margin-top: 8px;
+//   margin-bottom: 8px;
+//   border-radius: 8px;
+//   :hover {
+//     border: none;
+//     border-radius: 8px;
+//   }
+//   @include tablet {
+//     width: 49%;
+//   }
+// }

@@ -9,6 +9,11 @@
     @content;
   }
 }
+@mixin super {
+  @media all and (min-width: 2000px) {
+    @content;
+  }
+}
 
 //margins
 @mixin contentCentered($width) {

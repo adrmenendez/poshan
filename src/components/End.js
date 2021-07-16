@@ -13,8 +13,26 @@ const End = (props) => {
   );
 
   const paintDiet = () => {
-    const diet = chooseDiet(props.gender, props.meals, goal, sport);
-    const htmlCode = getHtmlCode(diet);
+    let htmlCode;
+    if (props.age < 18) {
+      htmlCode = (
+        <div>
+          <h2 className='font_title finalDiet_title'>
+            Hey {props.name}! You're still growing up!
+          </h2>
+          <p className='font_subtitle'>
+            Eat clean, eat balanced and do as much sport as you can!
+          </p>
+          <p className='font_subtitle'>
+            Come here again in a few years and we will calculate the perfect
+            plan for you!
+          </p>
+        </div>
+      );
+    } else {
+      const diet = chooseDiet(props.gender, props.meals, goal, sport);
+      htmlCode = getHtmlCode(diet, props.name);
+    }
     return htmlCode;
   };
 
@@ -26,12 +44,10 @@ const End = (props) => {
       <NavBar />
       <div className='questionnaire'>
         <div className='container finalDiet'>
-          <h2 className='font_subtitle--bold finalDiet_title'>
-            Click here and download your personalized plan!:
-          </h2>
-          <button className='header_content--submit' onClick={handleClick()}>
+          {/* <button className='header_content--submit' onClick={handleClick()}>
             Download your plan
-          </button>
+          </button> */}
+          {paintDiet()}
         </div>
       </div>
       <Footer />

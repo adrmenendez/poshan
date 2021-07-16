@@ -1,17 +1,22 @@
-const getHtmlCode = (diet) => {
+const getHtmlCode = (diet, name) => {
   const htmlCode = diet.meals.map((meal, index) => {
     return (
       <>
-        <h2 className='font_description--bold meals_title'>
-          Meal {[index + 1]}{' '}
-          {meal.options ? `(Pick ${meal.options} options)` : ''}
+        <h2 className='font_title finalDiet_title'>
+          Hi {name}! Here you have your personalized plan!
         </h2>
-        {meal.protein ? (
-          <p className='font_description'>- {meal.protein}</p>
-        ) : (
-          ''
-        )}
-        <p className='font_description'>- {meal.extra}</p>
+        <div>
+          <h2 className='font_description--bold meals_title'>
+            Meal {[index + 1]}{' '}
+            {meal.options ? `(Pick ${meal.options} options)` : ''}
+          </h2>
+          {meal.protein ? (
+            <p className='font_description'>- {meal.protein}</p>
+          ) : (
+            ''
+          )}
+          <p className='font_description'>- {meal.extra}</p>
+        </div>
       </>
     );
   });

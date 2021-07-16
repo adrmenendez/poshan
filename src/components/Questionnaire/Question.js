@@ -12,6 +12,20 @@ class Question extends React.Component {
       }
     };
 
+    const chooseValue = () => {
+      let value;
+      if (questionData.input.name === 'name') {
+        value = this.props.name;
+      } else if (questionData.input.name === 'age') {
+        value = this.props.age;
+      } else if (questionData.input.name === 'weight') {
+        value = this.props.weight;
+      } else {
+        value = this.props.heigth;
+      }
+      return value;
+    };
+
     const displayOptions = () => {
       if (typeof questionData.options === 'string') {
         return (
@@ -19,6 +33,7 @@ class Question extends React.Component {
             <input
               className='question_option--input'
               type='text'
+              value={chooseValue()}
               placeholder={questionData.input.placeholder}
               name={questionData.input.name}
               onChange={this.props.handleTextInput}
