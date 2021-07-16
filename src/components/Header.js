@@ -1,15 +1,15 @@
 import React from 'react';
-import header from '../images/header.jpg';
+import header from '../images/header-2.jpg';
 import { Link } from 'react-router-dom';
 
 class Header extends React.Component {
   render() {
     return (
-      <header className='header'>
+      <header className='header' style={{ backgroundImage: `url(${header})` }}>
         <section className='header_content container'>
           <div
             className='header_content--img'
-            style={{ backgroundImage: `url(${header})` }}
+            // style={{ backgroundImage: `url(${header})` }}
           ></div>
           <div className='header_text'>
             <h2 className='header_content--title font_h1'>

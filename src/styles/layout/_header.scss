@@ -1,6 +1,10 @@
 .header {
   width: 100%;
-  background-color: $mainBackground;
+  // background-color: $mainBackground;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.75;
   height: 80vh;
   display: flex;
   flex-direction: column;
@@ -11,7 +15,7 @@
     padding-bottom: 65px;
   }
   @include desktop {
-    height: 70vh;
+    height: 100vh;
     padding-bottom: 0;
   }
   @include super {
@@ -19,6 +23,7 @@
     padding-bottom: 0;
   }
   &_content {
+    opacity: 1;
     text-align: center;
     &--title {
       padding-bottom: 12px;
@@ -33,15 +38,15 @@
     }
     @include tablet {
       @include flexCentered();
-      .header_content--img {
-        width: 360px;
-        height: 250px;
-        background-repeat: no-repeat;
-        background-size: cover;
-        opacity: 0.9;
-        border-radius: 10px;
-        box-shadow: $boxShadow;
-      }
+      // .header_content--img {
+      //   width: 360px;
+      //   height: 250px;
+      //   background-repeat: no-repeat;
+      //   background-size: cover;
+      //   opacity: 0.9;
+      //   border-radius: 10px;
+      //   box-shadow: $boxShadow;
+      // }
     }
     @include desktop {
       max-width: 1200px;
