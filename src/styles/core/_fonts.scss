@@ -39,7 +39,7 @@
 }
 
 .font_subtitle {
-  @include regularFont(rem(18), $mainFontColor);
+  @include regularFont(rem(20), $mainFontColor);
   @include tablet {
     font-size: rem(22);
   }
@@ -49,11 +49,11 @@
 }
 
 .font_description {
-  @include regularFont(rem(16), $mainFontColor);
+  @include regularFont(rem(18), $mainFontColor);
 }
 
 .font_description--bold {
-  @include boldFont(rem(16), $mainFontColor);
+  @include boldFont(rem(18), $mainFontColor);
 }
 
 .font_small {
