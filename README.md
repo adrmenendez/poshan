@@ -1,6 +1,6 @@
 # poshan
 
-![image](https://user-images.githubusercontent.com/79847060/125277643-fcca5600-e311-11eb-9fe5-126b6cef27c8.png)
+![image](https://user-images.githubusercontent.com/79847060/126046118-abd2a247-30d5-4414-a72f-9a3ecec01656.png)
 
 This is a personal project that I'm developing in order to improve my code skills. I have choosen to develop 'poshan' because I love fitness life and healthy food.
 
