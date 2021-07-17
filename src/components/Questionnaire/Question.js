@@ -29,33 +29,35 @@ class Question extends React.Component {
     const displayOptions = () => {
       if (typeof questionData.options === 'string') {
         return (
-          <>
+          <div className='question_input container'>
             <input
-              className='question_option--input'
+              className='question_input--input'
               type='text'
               value={chooseValue()}
               placeholder={questionData.input.placeholder}
               name={questionData.input.name}
               onChange={this.props.handleTextInput}
             />
-            <Link className='question_option--next' to={findNextRoute()}>
+            <Link className='question_input--next' to={findNextRoute()}>
               Next
             </Link>
-          </>
+          </div>
         );
       } else {
         return questionData.options.map((option, index) => {
           return (
-            <Link className='question_option--button' to={findNextRoute()}>
-              <input
-                id={index}
-                type='button'
-                name={questionData.name}
-                value={option}
-                onClick={this.props.handleButtonClick}
-                className='question_option--value'
-              />
-            </Link>
+            <>
+              <Link className='question_option--button' to={findNextRoute()}>
+                <input
+                  id={index}
+                  type='button'
+                  name={questionData.name}
+                  value={option}
+                  onClick={this.props.handleButtonClick}
+                  className='question_option--value'
+                />
+              </Link>
+            </>
           );
         });
       }
@@ -84,7 +86,11 @@ class Question extends React.Component {
         <section className='question container'>
           <h2 className='font_h1'>{questionData.question}</h2>
           <p className='font_subtitle'>{questionData.description}</p>
-          <div className='question_option container'>{displayOptions()}</div>
+          {typeof questionData.options === 'string' ? (
+            displayOptions()
+          ) : (
+            <div className='question_option container'>{displayOptions()}</div>
+          )}
         </section>
       </>
     );
