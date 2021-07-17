@@ -6,7 +6,7 @@
   @include tablet {
     flex-direction: row;
     justify-content: space-between;
-    @include contentCentered(700px);
+    @include contentCentered(800px);
   }
   &_img {
     width: 300px;
@@ -16,6 +16,10 @@
     background-position: center;
     border-radius: 10px;
     box-shadow: $boxShadow;
+    @include tablet {
+      width: 400px;
+      height: 400px;
+    }
   }
   &_title {
     padding-top: 32px;

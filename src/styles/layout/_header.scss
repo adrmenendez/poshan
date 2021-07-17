@@ -1,73 +1,33 @@
 .header {
   width: 100%;
-  // background-color: $mainBackground;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   opacity: 0.75;
-  height: 80vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  padding-bottom: 120px;
-  @include tablet {
-    height: 90vh;
-    padding-bottom: 65px;
-  }
-  @include desktop {
-    height: 100vh;
-    padding-bottom: 0;
-  }
+  justify-content: center;
   @include super {
-    height: 60vh;
-    padding-bottom: 0;
+    height: 80vh;
   }
   &_content {
     opacity: 1;
     text-align: center;
     &--title {
+      opacity: 1;
+      color: $thirdFontColor;
       padding-bottom: 12px;
       line-height: 1.1;
     }
     &--subtitle {
+      opacity: 1;
+      color: $thirdFontColor;
       padding-bottom: 25px;
     }
     &--submit {
       @include button();
       cursor: pointer;
-    }
-    @include tablet {
-      @include flexCentered();
-      // .header_content--img {
-      //   width: 360px;
-      //   height: 250px;
-      //   background-repeat: no-repeat;
-      //   background-size: cover;
-      //   opacity: 0.9;
-      //   border-radius: 10px;
-      //   box-shadow: $boxShadow;
-      // }
-    }
-    @include desktop {
-      max-width: 1200px;
-      flex-direction: row;
-      justify-content: space-evenly;
-      align-items: flex-start;
-      text-align: left;
-      .header_content--img {
-        width: 450px;
-        height: 320px;
-      }
-      .header_text {
-        width: 50%;
-        padding-left: 24px;
-      }
-    }
-    @include super {
-      .header_content--img {
-        width: 500px;
-        height: 350px;
-      }
     }
   }
 }

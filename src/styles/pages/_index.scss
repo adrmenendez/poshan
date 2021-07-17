@@ -1,22 +1,23 @@
 .intro {
   @include flexCentered();
   text-align: center;
-  transform: translate(0, -140px);
-  padding-top: 64px;
+  padding-top: 72px;
+  padding-bottom: 72px;
   &_box {
-    width: 235px;
+    width: 350px;
     height: auto;
+    margin-right: 16px;
     &--img {
       width: 100%;
       border-radius: 10px;
       box-shadow: $boxShadow;
     }
     @include tablet {
-      width: 310px;
+      width: 400px;
       height: auto;
     }
     @include desktop {
-      width: 360px;
+      width: 450px;
       height: auto;
     }
   }
@@ -40,18 +41,18 @@
     }
   }
   @include desktop {
-    @include contentCentered(810px);
+    @include contentCentered(1000px);
   }
 }
 
 .philosophy {
-  background-color: $secondBackground;
+  background-color: $mainBackground;
   width: 100vw;
   text-align: center;
   &-content {
     @include flexCentered();
     &_title {
-      padding-top: 64px;
+      padding-top: 68px;
       padding-bottom: 48px;
     }
     @include tablet {
@@ -69,7 +70,7 @@
 }
 
 .start {
-  background-color: $secondBackground;
+  background-color: $mainBackground;
   width: 100vw;
   padding: 96px 0;
   &_content {

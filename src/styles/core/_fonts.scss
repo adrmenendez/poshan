@@ -9,12 +9,22 @@
 }
 
 .font_h1 {
-  @include boldFont(rem(28), $mainFontColor);
+  @include boldFont(rem(36), $mainFontColor);
   @include tablet {
-    font-size: rem(36);
+    font-size: rem(42);
   }
   @include desktop {
-    font-size: rem(36);
+    font-size: rem(50);
+  }
+}
+
+.font_subtitle--header {
+  @include regularFont(rem(22), $mainFontColor);
+  @include tablet {
+    font-size: rem(22);
+  }
+  @include desktop {
+    font-size: rem(30);
   }
 }
 

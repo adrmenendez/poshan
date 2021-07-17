@@ -7,21 +7,15 @@ class Header extends React.Component {
     return (
       <header className='header' style={{ backgroundImage: `url(${header})` }}>
         <section className='header_content container'>
-          <div
-            className='header_content--img'
-            // style={{ backgroundImage: `url(${header})` }}
-          ></div>
-          <div className='header_text'>
-            <h2 className='header_content--title font_h1'>
-              Personalized plans based on your goals.
-            </h2>
-            <h3 className='header_content--subtitle font_subtitle'>
-              Eat what you really like, we just make the maths.
-            </h3>
-            <Link to='/start' className='header_content--submit'>
-              Try it free
-            </Link>
-          </div>
+          <h2 className='header_content--title font_h1'>
+            Personalized plans based on your goals.
+          </h2>
+          <h3 className='header_content--subtitle font_subtitle--header'>
+            Eat what you really like, we just make the maths.
+          </h3>
+          <Link to='/start' className='header_content--submit'>
+            Try it free
+          </Link>
         </section>
       </header>
     );

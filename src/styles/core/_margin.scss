@@ -4,6 +4,6 @@
     margin: 0 35px;
   }
   @include desktop {
-    @include contentCentered(810px);
+    @include contentCentered(1000px);
   }
 }
