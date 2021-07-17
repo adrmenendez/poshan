@@ -17,13 +17,13 @@
     display: flex;
     justify-content: space-between;
     &_item {
-      @include regularFont(16px, $secondFontColor);
+      @include regularFont(18px, $secondFontColor);
       padding: 0 5px;
     }
   }
   &_logo {
     a {
-      @include regularFont(16px, $secondFontColor);
+      @include regularFont(18px, $secondFontColor);
     }
   }
 }
