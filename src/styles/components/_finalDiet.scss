@@ -3,6 +3,9 @@
   padding-top: 120px;
   &_title {
     padding-bottom: 32px;
+    &--name {
+      text-transform: capitalize;
+    }
   }
   .meals {
     &_title {

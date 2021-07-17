@@ -1,8 +1,8 @@
 .intro {
   @include flexCentered();
   text-align: center;
-  padding-top: 72px;
-  padding-bottom: 72px;
+  padding-top: 104px;
+  padding-bottom: 104px;
   &_box {
     width: 350px;
     height: auto;
@@ -52,7 +52,7 @@
   &-content {
     @include flexCentered();
     &_title {
-      padding-top: 68px;
+      padding-top: 104px;
       padding-bottom: 48px;
     }
     @include tablet {
