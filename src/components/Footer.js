@@ -19,22 +19,16 @@ class Footer extends React.Component {
             </li>
           </ul>
           <ul className='footer_content_copy'>
+            <li className='copy-list'>
+              <span className='font_small'>Copyrigth © 2021 | poshan</span>
+            </li>
             {/* <li className='copy-list'>
               <a href='#' className='font_small'>
-                <small>Copyrigth © 2021</small>
+                Terms & Conditions
               </a>
               <span className='font_small'>|</span>
               <a href='#' className='font_small'>
-                <small>poshan</small>
-              </a>
-            </li>
-            <li className='copy-list'>
-              <a href='#' className='font_small'>
-                <small>Terms & Conditions</small>
-              </a>
-              <span className='font_small'>|</span>
-              <a href='#' className='font_small'>
-                <small>Privacy Policy</small>
+                Privacy Policy
               </a>
             </li> */}
           </ul>
