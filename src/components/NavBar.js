@@ -7,7 +7,7 @@ class NavBar extends React.Component {
       <nav className='navbar'>
         <section className='navbar_content container'>
           <h1 className='navbar_logo'>
-            <a href='../index.html'>poshan</a>
+            <Link to='/'>poshan</Link>
           </h1>
 
           <ul className='navbar_menu'>
