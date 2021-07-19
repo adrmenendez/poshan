@@ -11,6 +11,7 @@ const getHtmlCode = (diet, name) => {
         ) : (
           ''
         )}
+        {meal.carbs ? <p className='font_description'>- {meal.carbs}</p> : ''}
         <p className='font_description'>- {meal.extra}</p>
       </>
     );
@@ -29,7 +30,8 @@ const getHtmlCode = (diet, name) => {
   return (
     <>
       <h2 className='font_title finalDiet_title'>
-        Hi <span className="finalDiet_title--name">{name}</span>! Here you have your personalized plan!
+        Hi <span className='finalDiet_title--name'>{name}</span>! Here you have
+        your personalized plan!
       </h2>
       <div className='meals'>{htmlCode}</div>
       <div className='carbs'>{carbsCode}</div>
