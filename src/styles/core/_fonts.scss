@@ -49,11 +49,17 @@
 }
 
 .font_description {
-  @include regularFont(rem(18), $mainFontColor);
+  @include regularFont(rem(16), $mainFontColor);
+  @include tablet {
+    font-size: rem(18);
+  }
 }
 
 .font_description--bold {
-  @include boldFont(rem(18), $mainFontColor);
+  @include boldFont(rem(16), $mainFontColor);
+  @include tablet {
+    font-size: rem(18);
+  }
 }
 
 .font_small {
