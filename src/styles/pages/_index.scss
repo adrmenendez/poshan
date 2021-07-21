@@ -47,7 +47,7 @@
 
 .philosophy {
   background-color: $mainBackground;
-  width: 100vw;
+  min-width: 100%;
   text-align: center;
   &-content {
     @include flexCentered();
@@ -71,7 +71,7 @@
 
 .start {
   background-color: $mainBackground;
-  width: 100vw;
+  min-width: 100%;
   padding: 96px 0;
   &_content {
     text-align: center;
